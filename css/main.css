@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #00b33c;
+  --secondary-color: #20272E;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 1.5em;
+}
+
+h3 {
+  text-align: justify;
+}
+
+.top-nav {
+  background: white;
+  padding: 1em;
+  border-bottom-style: ridge;
+}
+
+.top-nav .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 2em;
+}
+
+.top-nav .logo span {
+  color: var(--primary-color);
+}
+
+.top-nav nav {
+  display: none;
+}
+
+.top-nav .container-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.top-nav .mobile-menu {
+  background: var(--primary-color);
+  cursor: pointer;
+  padding: .2em;
+  border-radius: .3em;
+  border-style: solid;
+}
+
+.featured-section {
+  text-align: center;
+}
+
+.featured-section .featured-title {
+  margin-top: 0em;
+}
+
+.featured-section li {
+  text-align: center;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  padding: .3em 1em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  border-color: black;
+  border-style: solid;
+  font-weight: bold;
+  display: inline-block;
+  margin: .5em;
+}
+
+.featured-section .prod1-cta {
+  color: white;
+}
+
+.featured-section .prod2-cta {
+  color: white;
+}
+
+.featured-section .prod3-cta {
+  color: white;
+}
+
+.department-section {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.department-section .department-list {
+  margin: 0;
+  padding-left: .1em;
+}
+
+.department-section .department-list a {
+  color: white;
+}
+
+.department-section .department-list li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+.department-section .department-list li::before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/bullet.svg");
+  background-size: contain;
+  margin-right: .5em;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+}
+
+.contact-section label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+.contact-section input, .contact-section textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-section input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: .8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+.stores-section iframe {
+  width: 100%;
+  height: 300px;
+}
+
+/*
+<div class="top-nav">
+        <div class="container-nav">
+            <a class="logo" href="https://www.ucab.edu.ve">
+                <span>e</span>Commerce
+            </a>
+            <a href="#" class="account-cta">Mi Cuenta</a> 
+            <div class="search-container">
+                <form action="#">
+                    <input type="text" placeholder="Buscar Producto..." name="search">
+                    <button type="submit"> <i class="fa fa-search"></i> </button>
+                </form>
+            </div>           
+        </div>
+    </div>
+*/
+/*# sourceMappingURL=main.css.map */
