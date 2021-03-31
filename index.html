@@ -16,6 +16,7 @@
             </a>
             <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
             <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
                 <ul class="user-nav">
                     <li> <a href="#">Iniciar Sesion</a> </li>
                     <li> <a href="#">Registrarse</a></li>
@@ -27,13 +28,17 @@
     <section class="featured-section">
         <div class="container-feat">
             <h3 class="featured-title">Productos Destacados</h3>
-            <nav>
-                <ul class="featured-list">
-                    <li> <a href="#" class="prod1-cta">Producto1</a> </li>
-                    <li> <a href="#" class="prod2-cta">Producto2</a> </li>
-                    <li> <a href="#" class="prod3-cta">Producto3</a> </li>
-                </ul>
-            </nav>
+            <ul class="featured-list">
+                <li>
+                    <a href="#" class="prod1-cta">Producto1</a> 
+                </li>
+                <li> 
+                    <a href="#" class="prod2-cta">Producto2</a> 
+                </li>
+                <li>
+                    <a href="#" class="prod3-cta">Producto3</a> 
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -76,6 +81,22 @@
             </iframe>
         </div>
     </section>
+
+    <!-- JavaScript para el menu movil -->
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn'); 
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn'); 
+        })
+    </script>
     
 </body>
 </html>

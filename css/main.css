@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 ul {
@@ -47,6 +48,14 @@ h3 {
 
 .top-nav nav {
   display: none;
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
 }
 
 .top-nav .container-nav {
@@ -64,6 +73,36 @@ h3 {
   border-style: solid;
 }
 
+.top-nav .mobile-menu:hover {
+  background-color: #00b33c96;
+}
+
+.top-nav .mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+.top-nav .user-nav {
+  margin-top: 5em;
+}
+
+.top-nav .user-nav li a {
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.top-nav .user-nav li a:hover {
+  font-weight: bold;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
 .featured-section {
   text-align: center;
 }
@@ -77,13 +116,18 @@ h3 {
   background-color: var(--primary-color);
   text-decoration: none;
   padding: .3em 1em;
+  width: 80%;
+  margin: 0 auto 1em auto;
   font-size: 1.4em;
   border-radius: 5em;
   border-color: black;
   border-style: solid;
   font-weight: bold;
   display: inline-block;
-  margin: .5em;
+}
+
+.featured-section li:hover {
+  background-color: var(--secondary-color);
 }
 
 .featured-section .prod1-cta {
@@ -106,6 +150,10 @@ h3 {
 .department-section .department-list {
   margin: 0;
   padding-left: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
 .department-section .department-list a {
@@ -119,7 +167,11 @@ h3 {
   position: relative;
 }
 
-.department-section .department-list li::before {
+.department-section .department-list li:hover {
+  font-weight: bold;
+}
+
+.department-section .department-list li:before {
   content: '';
   left: -2em;
   position: absolute;
@@ -155,13 +207,26 @@ h3 {
   color: white;
   font-weight: bold;
   font-size: 1.3em;
-  border: none;
+  border-color: black;
+  border-style: solid;
   margin-bottom: 5em;
   border-radius: 5em;
   display: inline-block;
   padding: .8em 2em;
   width: unset;
+}
+
+.contact-section input[type="submit"]:hover {
+  background-color: var(--secondary-color);
   cursor: pointer;
+}
+
+.stores-section {
+  padding-top: 0;
+}
+
+.stores-section h3 {
+  margin-top: 0;
 }
 
 .stores-section iframe {
@@ -169,20 +234,52 @@ h3 {
   height: 300px;
 }
 
-/*
-<div class="top-nav">
-        <div class="container-nav">
-            <a class="logo" href="https://www.ucab.edu.ve">
-                <span>e</span>Commerce
-            </a>
-            <a href="#" class="account-cta">Mi Cuenta</a> 
-            <div class="search-container">
-                <form action="#">
-                    <input type="text" placeholder="Buscar Producto..." name="search">
-                    <button type="submit"> <i class="fa fa-search"></i> </button>
-                </form>
-            </div>           
-        </div>
-    </div>
-*/
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .top-nav .container-nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .top-nav nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .top-nav nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .top-nav nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .top-nav nav ul.user-nav {
+    margin: 0;
+  }
+  .top-nav nav li a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-right: 1em;
+  }
+  .top-nav nav li a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+}
 /*# sourceMappingURL=main.css.map */
