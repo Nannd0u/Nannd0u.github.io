@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-commerce | Bodegón Virtual Veneco</title>
+    <title>e-commerce | Bodegón Virtual</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-    <div class="top-nav">
-        <div class="container-nav">
-            <a class="logo" href="https://www.ucab.edu.ve">
-                <span>e</span>Commerce
-            </a>
-            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
-            <nav>
-                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
-                <ul class="user-nav">
-                    <li> <a href="#">Iniciar Sesion</a> </li>
-                    <li> <a href="#">Registrarse</a></li>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.ucab.edu.ve"> <span>e</span>Commerce </a>
+            <button class="navbar-toggler" 
+                type="button"  
+                data-toggle="collapse" 
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toogle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="#">Iniciar Sesion</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Registrarse</a> </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <section class="featured-section">
         <div class="container-feat">
@@ -82,21 +90,10 @@
         </div>
     </section>
 
-    <!-- JavaScript para el menu movil -->
+    <!-- FOOTER -->
 
-    <script>
-        const mobileBtn = document.getElementById('mobile-cta')
-            nav = document.querySelector('nav')
-            mobileBtnExit = document.getElementById('mobile-exit');
-
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn'); 
-        })
-
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn'); 
-        })
-    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     
 </body>
 </html>
