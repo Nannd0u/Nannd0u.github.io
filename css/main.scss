@@ -10,6 +10,17 @@ body {
     }
 }
 
+.card-border {
+	border: solid 10px white;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: all ease-out 0.2s;
+}
+
+.card-border:hover {
+	transform: scale(1.05);
+}
+
 
 /*.search_wrap{
 	width: 500px;
@@ -77,14 +88,21 @@ body {
         display: none;
     }
 
-<div class="d-md-flex  search_wrap search_wrap_1">
-        <div class="search_box">
-            <input type="text" class="input" placeholder="Buscar...">
-            <div class="btn btn_common">
-                <i class="fas fa-search"></i>
-            </div>
+	<section class="container-md mt-4">
+        <div class="container-feat">
+            <h3 class="featured-title">Productos Destacados</h3>
+            <ul class="featured-list">
+                <li>
+                    <a href="#" class="prod1-cta">Producto1</a> 
+                </li>
+                <li> 
+                    <a href="#" class="prod2-cta">Producto2</a> 
+                </li>
+                <li>
+                    <a href="#" class="prod3-cta">Producto3</a> 
+                </li>
+            </ul>
         </div>
-    </div>
-
+    </section>
 
 }*/

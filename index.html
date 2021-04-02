@@ -82,51 +82,68 @@
             padding: 0px 5px;
             border-radius: 50px;
             font-size: 18px;
-            font-family: 'Poppins';
             color: #424242;
         }
 
         .search:focus {
                 outline: none;
         }
-        .material-icon {
-            font-size: 26;
-            color: #198754;
-        }
-
+        
     </style>
 
     <div class="boxContainer">
         <table class="elementsContainer">
             <tr>
                 <td>
-                    <input type="text" placeholder="buscar..." class="search">
+                    <input type="text" placeholder="Buscar Productos..." class="search">
                 </td>
                 <td>
-                    <a href="#"> <span class="material-icons">search</span> </a>
+                    <a href="#"> <span class="material-icons text-success">search</span> </a>
                 </td>
             </tr>
         </table>
     </div>
 
-    
+    <!-- FEATURED -->
 
-    <section class="featured-section">
-        <div class="container-feat">
-            <h3 class="featured-title">Productos Destacados</h3>
-            <ul class="featured-list">
-                <li>
-                    <a href="#" class="prod1-cta">Producto1</a> 
-                </li>
-                <li> 
-                    <a href="#" class="prod2-cta">Producto2</a> 
-                </li>
-                <li>
-                    <a href="#" class="prod3-cta">Producto3</a> 
-                </li>
-            </ul>
+    <div id="featured">
+        <div class="container-md p-5">
+            <div class="row pt-3 pb-5 h1">
+                <h3 class="text-center">Productos Destacados</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card w-100 card-border mn-5">
+                        <img src="images/nutella.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card w-100 card-border mn-5">
+                        <img src="images/rum-cacique.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card w-100 card-border mn-5">
+                        <img src="images/oreocereal.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+
+    
 
     <section class="department-section">
         <div class="container-dept">
