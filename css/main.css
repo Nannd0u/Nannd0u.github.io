@@ -1,4 +1,15 @@
+/*:root {
+    --primary-color: #00b33c;
+}*/
 body {
   background: #f2f2f2;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-link:hover {
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
