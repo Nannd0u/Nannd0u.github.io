@@ -10,7 +10,8 @@ body {
     }
 }
 
-.search_wrap{
+
+/*.search_wrap{
 	width: 500px;
 	margin: -30px auto;
 }
@@ -75,4 +76,15 @@ body {
     .search_wrap {
         display: none;
     }
-}
+
+<div class="d-md-flex  search_wrap search_wrap_1">
+        <div class="search_box">
+            <input type="text" class="input" placeholder="Buscar...">
+            <div class="btn btn_common">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </div>
+
+
+}*/

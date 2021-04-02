@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-commerce | Bodegón Virtual</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -51,14 +53,63 @@
         </div>
     </div>
 
-    <div class="search_wrap search_wrap_1">
-        <div class="search_box">
-            <input type="text" class="input" placeholder="Buscar...">
-            <div class="btn btn_common">
-                <i class="fas fa-search"></i>
-            </div>
-        </div>
+    <!-- SEARCH BAR -->
+
+    <style>
+
+        .boxContainer {
+            margin: auto;
+            margin-top: -20px;
+            background-color: white;
+            position: relative;
+            width: 300px;
+            height: 42px;
+            border: 4px solid #198754;
+            padding: 0px 10px;
+            border-radius: 50px;
+        }
+
+        .elementsContainer {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .search {
+            border: none;
+            height: 100%;
+            width: 100%;
+            padding: 0px 5px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-family: 'Poppins';
+            color: #424242;
+        }
+
+        .search:focus {
+                outline: none;
+        }
+        .material-icon {
+            font-size: 26;
+            color: #198754;
+        }
+
+    </style>
+
+    <div class="boxContainer">
+        <table class="elementsContainer">
+            <tr>
+                <td>
+                    <input type="text" placeholder="buscar..." class="search">
+                </td>
+                <td>
+                    <a href="#"> <span class="material-icons">search</span> </a>
+                </td>
+            </tr>
+        </table>
     </div>
+
+    
 
     <section class="featured-section">
         <div class="container-feat">

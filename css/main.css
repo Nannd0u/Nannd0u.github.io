@@ -71,9 +71,10 @@ body {
   margin-top: 5em;
 }
 
-@media only screen and (max-width: 576px) {
-  .search_wrap {
-    display: none;
-  }
-}
+/*@media only screen and (max-width: 576px) {
+
+    .search_wrap {
+        display: none;
+    }
+}*/
 /*# sourceMappingURL=main.css.map */
