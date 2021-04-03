@@ -21,9 +21,13 @@ body {
 	transform: scale(1.05);
 }
 
+.carousel-item {
+	height: 70vh;
+}
+
 .boxContainer {
-	margin: auto;
-	margin-top: -20px;
+	margin: 6em auto;
+	margin-bottom: 10px;
 	background-color: white;
 	position: relative;
 	width: 300px;
@@ -31,6 +35,7 @@ body {
 	border: 3px solid #198754;
 	padding: 0px 10px;
 	border-radius: 50px;
+	display: block;
 }
 
 .elementsContainer {
@@ -54,12 +59,9 @@ body {
 }
 
 .search:focus {
-		outline: none;
+	outline: none;
 }
 
-.carousel-item {
-	height: 70vh;
-}
 
 .card-border {
 	border: solid 10px white;
@@ -73,7 +75,7 @@ body {
 }
 
 .feat-item {
-	height: 45vh;
+	height: 40vh;
 }
 
 .text-shadow{
@@ -84,6 +86,8 @@ body {
 	cursor: pointer;
 	transition: all ease-out 0.2s;
 	height: 50vh;
+	width: 90%;
+	border-radius: 20%;
 }
 
 .dept:hover {
@@ -99,8 +103,8 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
-	.boxContainer {
-		margin-top: -11.6em;
+	.carousel-item {
+		height: 70vh;
 	}
 
 	.card-border {

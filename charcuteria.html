@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce | Bodegón Virtual</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+    <div class="container-md">
+        <a class="navbar-brand" href="index.html"> <span>e</span>Commerce </a>
+        <button 
+            class="navbar-toggler" 
+            type="button"  
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toogle navigation"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"> <a class="nav-link" href="#">Mi Cuenta</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Mi pedido</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Saldo</a> </li>
+            </ul>
+        </div>  
+    </div>
+  </nav>
+
+  <!-- SEARCH BAR -->
+
+    <div class="container-sm boxContainer">
+        <table class="elementsContainer">
+            <tr>
+                <td>
+                    <input type="text" placeholder="Buscar Productos" class="search">
+                </td>
+                <td>
+                    <a href="#"> <span class="material-icons text-success">search</span> </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+   <!-- SNACKS -->
+
+   <div id="featured">
+    <div class="container-md p-5">
+        <div class="row pt-3 pb-5 h1">
+            <h3 class="text-center">Charcuteria</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card w-100 card-border mn-5">
+                    <img src="images/nutella.jpg" class="feat-item card-img-top w-100" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card w-100 card-border mn-5">
+                    <img src="images/rum-cacique.jpg" class="feat-item card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card w-100 card-border mn-5">
+                    <img src="images/oreocereal.jpg" class="feat-item card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+
+  <!-- JAVASCRIPT -->
+
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>    
+
+</body>
+</html>
