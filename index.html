@@ -12,6 +12,71 @@
 </head>
 <body>
 
+    <!-- CSS -->
+
+    <style>
+
+        .boxContainer {
+            margin: auto;
+            margin-top: -20px;
+            background-color: white;
+            position: relative;
+            width: 300px;
+            height: 42px;
+            border: 4px solid #198754;
+            padding: 0px 10px;
+            border-radius: 50px;
+        }
+
+        .elementsContainer {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .search {
+            border: none;
+            height: 100%;
+            width: 100%;
+            padding: 0px 5px;
+            border-radius: 50px;
+            font-size: 18px;
+            color: #424242;
+        }
+
+        .search:focus {
+                outline: none;
+        }
+
+        .card-border {
+            border: solid 10px white;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all ease-out 0.2s;
+        }
+
+        .card-border:hover {
+            transform: scale(1.05);
+        }
+
+        .dept {
+            cursor: pointer;
+            transition: all ease-out 0.2s;
+        }
+
+        .dept:hover {
+            transform: scale(1.05);
+        }
+
+        .dept-name {
+            background-color: rgba(0, 0, 0);
+            display: inline-block;
+            margin: 12px auto;
+            text-align: center;
+            border-radius: 15px;
+        }
+    </style>
+
     <!-- NAVBAR -->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
@@ -55,42 +120,6 @@
 
     <!-- SEARCH BAR -->
 
-    <style>
-
-        .boxContainer {
-            margin: auto;
-            margin-top: -20px;
-            background-color: white;
-            position: relative;
-            width: 300px;
-            height: 42px;
-            border: 4px solid #198754;
-            padding: 0px 10px;
-            border-radius: 50px;
-        }
-
-        .elementsContainer {
-            width: 100%;
-            height: 100%;
-            vertical-align: middle;
-        }
-
-        .search {
-            border: none;
-            height: 100%;
-            width: 100%;
-            padding: 0px 5px;
-            border-radius: 50px;
-            font-size: 18px;
-            color: #424242;
-        }
-
-        .search:focus {
-                outline: none;
-        }
-        
-    </style>
-
     <div class="boxContainer">
         <table class="elementsContainer">
             <tr>
@@ -114,7 +143,7 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="card w-100 card-border mn-5">
-                        <img src="images/nutella.jpg" class="card-img-top" alt="...">
+                        <img src="images/nutella.jpg" class="card-img-top w-100" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -143,21 +172,54 @@
         </div>
     </div>
 
+    <!-- DEPARTMENTS -->
     
-
-    <section class="department-section">
-        <div class="container-dept">
-            <h3 class="department-title">Departamentos</h3>
-            <ul class="department-list">
-                <li> <a href="#">Snacks</a> </li>
-                <li> <a href="#">Cereales</a> </li>
-                <li> <a href="#">Bebidas</a> </li>
-                <li> <a href="#">Quesos</a> </li>
-                <li> <a href="#">Charcutería</a> </li>
-                <li> <a href="#">Licoreria</a> </li>
-            </ul>
+    <div id="departments" class="px-5 pb-5 bg-dark bg-gradient">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center text-white p-5">Departamentos</h2>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-2">
+                <div class="col-sm">
+                    <img src="images/d-snacks.jpg" alt="" class="w-100 dept">
+                    <div class="text-center"> 
+                        <span class="dept-name h5 p-2 text-white">Snacks</span>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <img src="images/d-cereales.jpg" alt="" class="w-100 dept">
+                    <div class="text-center"> 
+                        <span class="dept-name h5 p-2 text-white">Cereales</span>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <img src="images/d-bebidas.png" alt="" class="w-100 dept">
+                    <div class="text-center"> 
+                        <span class="dept-name h5 p-2 text-white">Bebidas</span>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <img src="images/d-quesos.jpg" alt="" class="w-100 dept">
+                    <div class="text-center"> 
+                        <span class="dept-name h5 p-2 text-white">Quesos</span>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <img src="images/d-charcuteria.png" alt="" class="w-100 dept">
+                    <div class="text-center"> 
+                        <span class="dept-name h5 p-2 text-white">Charcuteria</span>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <img src="images/d-licores.jpg" alt="" class="w-100 dept">
+                    <div class="text-center"> 
+                        <span class="dept-name h5 p-2 text-white">Licores</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+    
 
     <section class="contact-section">
         <div class="container-contact">
