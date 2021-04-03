@@ -21,70 +21,110 @@ body {
 	transform: scale(1.05);
 }
 
-
-/*.search_wrap{
-	width: 500px;
-	margin: -30px auto;
-}
-
-.search_wrap .search_box{
+.boxContainer {
+	margin: auto;
+	margin-top: -20px;
+	background-color: white;
 	position: relative;
-	width: 500px;
-	height: 60px;
-}
-
-.search_wrap .search_box .input{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: 10px 20px;
-	border-radius: 3px;
-	font-size: 18px;
-}
-
-.search_wrap .search_box .btn{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 60px;
-	height: 100%;
-	background: #198754;
-	z-index: 1;
-	cursor: pointer;
-}
-
-.search_wrap .search_box .btn:hover{
-	background: green;	
-}
-
-.search_wrap .search_box .btn.btn_common .fas{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	color: #fff;
-	font-size: 20px;
-}
-
-.search_wrap.search_wrap_1 .search_box .input{
-    padding-right: 80px;
+	width: 300px;
+	height: 42px;
+	border: 3px solid #198754;
+	padding: 0px 10px;
 	border-radius: 50px;
 }
 
-.search_wrap.search_wrap_1 .search_box .btn{
-	right: 0px;
-	border-radius: 50%;
+.elementsContainer {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+
+	td span {
+		margin-top: 0.2em;
+	}
 }
 
-.featured-section {
-    margin-top: 5em;
+.search {
+	border: none;
+	height: 100%;
+	width: 100%;
+	padding: 0px 5px;
+	border-radius: 50px;
+	font-size: 18px;
+	color: #424242;
+}
+
+.search:focus {
+		outline: none;
+}
+
+.carousel-item {
+	height: 70vh;
+}
+
+.card-border {
+	border: solid 10px white;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: all ease-out 0.2s;
+}
+
+.card-border:hover {
+	transform: scale(1.05);
+}
+
+.feat-item {
+	height: 45vh;
+}
+
+.text-shadow{
+    text-shadow: 0 3px 3px rgba(0,0,0,0.6);
+}
+
+.dept {
+	cursor: pointer;
+	transition: all ease-out 0.2s;
+}
+
+.dept:hover {
+	transform: scale(1.05);
+}
+
+.dept-name {
+	background-color: black;
+	display: inline-block;
+	margin: 12px auto;
+	text-align: center;
+	border-radius: 15px;
 }
 
 @media only screen and (max-width: 576px) {
+	.boxContainer {
+		margin-top: -11.6em;
+	}
+}
 
-    .search_wrap {
-        display: none;
-    }
-}*/
+@media only screen and (min-width: 576px) {
+	
+}
+
+/*
+
+<section class="contact-section">
+        <div class="container-contact">
+            <div class="contact-left">
+                <h3>Contactanos!</h3>
+                <p>Estamos en la calle 13, mientras más me lo mamas más me crece. 
+                    Escribenos al 0416-6969555rriente si eres pussy y todavía usas Whatsapp. 
+                    Si tiene alguna queja, dejala en la caja de texto. Intentaremos leerla, pero
+                    no le pagamos suficiente a nuestos internos para prometerle que lo haremos ;) 
+                </p>
+                <form action="">
+                    <label for="message">Comentario</label>
+                    <textarea name="message" id="message" cols="30" rows="10">Marico el que lo lea</textarea>
+                    <input type="submit" class="" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+
+*/
