@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAChB,SAAS,EAAE,QAAQ;EACnB,WAAW,EAAE,MAAM;EACnB,mBAAmB,EAAE,IAAI;EACzB,gBAAgB,EAAE,IAAI;EACtB,WAAW,EAAE,IAAI;CACpB;;AAEC,MAAM,EAAE,SAAS,EAAE,KAAK;EACtB,AAAA,sBAAsB,CAAC;IACrB,SAAS,EAAE,MAAM;GAClB",
+    "sources": [
+        "checkout.scss"
+    ],
+    "names": [],
+    "file": "checkout.css"
+}
