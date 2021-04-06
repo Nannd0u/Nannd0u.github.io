@@ -91,7 +91,7 @@ body {
   transition: all ease-out 0.2s;
   height: 50vh;
   width: 90%;
-  border-radius: 7%;
+  border-radius: 20%;
 }
 
 .dept:hover {
@@ -105,11 +105,6 @@ body {
   margin: 12px auto;
   text-align: center;
   border-radius: 15px;
-}
-
-.form-control, .btn {
-  min-height: 3.125rem;
-  line-height: initial;
 }
 
 @media only screen and (max-width: 576px) {
@@ -126,56 +121,4 @@ body {
     height: 125px;
   }
 }
-
-
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:5vh;
-	right:5vw;
-	background-color:#ffca2c;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-}
-
-.my-float{
-	margin-top:22px;
-}
-
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(../misc/MaterialIcons-Regular.ttf) format('truetype');
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
 /*# sourceMappingURL=main.css.map */
