@@ -49,6 +49,11 @@
   margin-bottom: 0px;
 }
 
+.des a {
+  text-decoration: none;
+  color: #000;
+}
+
 .counter i {
   border: 1px solid #000;
   padding: 7px;
